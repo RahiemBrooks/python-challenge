@@ -1,4 +1,4 @@
-file = open ("./Desktop/budget_data.csv")
+file = open ("./Resources/budget_data.csv")
 header = file.readline()
 count = 0
 net_profit = 0
@@ -44,6 +44,6 @@ text_out += f"Greatest Decrease in Profits: {max_decrease_profit_date} (${max_de
 
 print(text_out)
 
-output_file = open ("./Desktop/budget_data_output.txt","w")
+output_file = open ("./analysis/budget_data_output.txt","w")
 output_file.write(text_out)
 output_file.close()
